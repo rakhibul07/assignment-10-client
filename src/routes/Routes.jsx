@@ -6,6 +6,8 @@ import MyCart from "../pages/MyCart/MyCart";
 import LogIn from "../pages/LogIn/LogIn";
 import SignUp from "../pages/SignUp/SignUp";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import PrivateRoutes from "./PrivateRoutes";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -14,11 +16,12 @@ const router = createBrowserRouter([
         children: ([
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                loader: () =>fetch("./data.json")
             },
             {
                 path: "/addProduct",
-                element: <AddProduct />
+                element: <PrivateRoutes><AddProduct /></PrivateRoutes>
             },
             {
                 path: "/myCart",
