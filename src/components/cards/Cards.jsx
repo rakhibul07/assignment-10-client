@@ -1,9 +1,10 @@
 import Card from "../card/Card";
-
+import PropTypes from 'prop-types'; 
 
 
 const Cards = ({cards}) => {
-
+    
+    console.log(cards);
     
     
     return (
@@ -19,5 +20,8 @@ const Cards = ({cards}) => {
         </div>
     );
 };
+Cards.propTypes ={
+    cards:PropTypes.array
+}
 
 export default Cards;
