@@ -45,7 +45,7 @@ const NavBar = () => {
                 <div className="navbar-end" >
                     <div onClick={()=>setMode(!mode)} className="flex justify-center items-center">
                     <button onClick={handleTheme} className="text-2xl lg:text-3xl pr-4">
-                    {mode? <MdDarkMode/>:<BsFillSunFill/>}</button>
+                    {mode? <BsFillSunFill/>:<MdDarkMode/>}</button>
                     </div>
 
                     {

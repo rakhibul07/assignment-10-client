@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Cards = ({cards}) => {
     
-    console.log(cards);
+  
     
     
     return (

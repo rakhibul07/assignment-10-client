@@ -24,7 +24,7 @@ const Product = ({product}) => {
     </div>
     <div className="card-actions justify-end">
      <Link to={`/products/${brand}/${_id}`}> <div className="badge badge-outline">Details</div> </Link>
-     <Link> <div className="badge badge-outline">Update</div></Link>
+     <Link to={`/updateProduct/${_id}`}> <div className="badge badge-outline">Update</div></Link>
     </div>
   </div>
 </div>
