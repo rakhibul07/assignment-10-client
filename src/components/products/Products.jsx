@@ -24,7 +24,7 @@ const Products = () => {
                     </div>
                 </div>
             ) : (
-                <div className="flex justify-center items-center h-[60vh]">
+                <div className="flex justify-center items-center h-[60vh] p-10 text-justify">
                     <h2 className="text-4xl ">No products are available for {brand}</h2>
                     
                 </div>

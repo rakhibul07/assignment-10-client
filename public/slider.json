@@ -2,30 +2,30 @@
     {
         "id": 1,
         "brand": "Apple",
-        "image1": "https://i.ibb.co/prGLQ3d/s1.jpg",
-        "image2": "https://i.ibb.co/hfXC7YN/s2.jpg",
-        "image3": "https://i.ibb.co/0X55f95/s3.jpg"
+        "image1": "https://i.ibb.co/R4TvyTj/DSC06857-1024x640.jpg",
+        "image2": "https://i.ibb.co/9Zg8FZ8/d3b9917f8a934bb0af7079966906d3ab.webp",
+        "image3": "https://i.ibb.co/pXj4vFj/mono-store.png"
     },
     {
         "id": 2,
         "brand": "Samsung",
-        "image1": "https://i.ibb.co/W09vfmd/sams.jpg",
-        "image2": "https://i.ibb.co/5c713Lr/sams2.jpg",
-        "image3": "https://i.ibb.co/hcbyHc3/sag.webp"
+        "image1": "https://i.ibb.co/b75p8LZ/bf7562e6e77c0103c27f6c6d769e08be.jpg",
+        "image2": "https://i.ibb.co/5kvs7bY/042-samsung-experience-boutique-store-india-1.jpg",
+        "image3": "https://i.ibb.co/Yf9VXKp/880417bcd6d9e0e46592ca8be73e0910.jpg"
     },
     {
         "id": 3,
         "brand": "Xiaomi",
-        "image1": "image1_3.jpg",
-        "image2": "image2_3.jpg",
-        "image3": "image3_3.jpg"
+        "image1": "https://i.ibb.co/Qkv0pH8/Xiaomi-Mi-Store-Pozna-r-d-o-Mi-Store.webp",
+        "image2": "https://i.ibb.co/X7V1zGQ/dsfd.jpg",
+        "image3": "https://i.ibb.co/KhZYW1B/Xiaomi-Store-Opening-Koeln-2.jpg"
     },
     {
         "id": 4,
         "brand": "Sony",
-        "image1": "image1_4.jpg",
-        "image2": "image2_4.jpg",
-        "image3": "image3_4.jpg"
+        "image1": "https://i.ibb.co/ysx8jc7/sony-resume.webp",
+        "image2": "https://i.ibb.co/RQ2hcSJ/gm-f6b88d88-4a42-4e5c-a580-25a0eb443888-tv-store-display.jpg",
+        "image3": "https://i.ibb.co/WWRjVBD/sony-bestbuy-abernathy-1200x700-1-1024x597.webp"
     },
     {
         "id": 5,
@@ -37,8 +37,8 @@
     {
         "id": 6,
         "brand": "Microsoft",
-        "image1": "image1_6.jpg",
-        "image2": "image2_6.jpg",
-        "image3": "image3_6.jpg"
+        "image1": "https://i.ibb.co/vs1pjcH/Back-2-D00-Wall-5-F00-33979-C46.jpg",
+        "image2": "https://i.ibb.co/YX3LyWX/microsoft-store-close-perma.jpg",
+        "image3": "https://i.ibb.co/HTfsFsL/1084721272-jpg.jpg"
     }
 ]

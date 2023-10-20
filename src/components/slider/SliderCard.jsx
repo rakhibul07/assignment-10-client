@@ -41,7 +41,7 @@ const SliderCard = ({ slider }) => {
         >
           <img src={image} className="w-full h-full" />
           <div style={sloganOverlayStyle}>
-            <p className='text-4xl'>{slogans[index]}</p>
+            <p className='text-4xl text-base-100'>{slogans[index]}</p>
           </div>
         </div>
       ))}
