@@ -44,17 +44,17 @@ const AddProduct = () => {
       });
   };
   return (
-    <div>
-      <div className="p-8 rounded border border-gray-200">
+    <div className="py-6">
+      <div className="p-12 bg-base-100 dark:bg-gray-700 dark:text-gray-200 rounded border-gray-200">
         <h1 className="font-medium text-3xl">Add Product</h1>
-        <p className="text-gray-600 mt-6">
+        <p className="text-gray-600 dark:text-gray-200 mt-6">
           Please provide the details of the product you want to add to our
           catalog. We appreciate your contribution to our platform.
         </p>
         <form onSubmit={handleAddProduct}>
           <div className="mt-8 grid lg:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Name
               </label>
               <input
@@ -66,7 +66,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Image
               </label>
               <input
@@ -78,7 +78,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Color
               </label>
               <input
@@ -90,7 +90,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Brand Name
               </label>
               <input
@@ -102,7 +102,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Type
               </label>
               <input
@@ -114,7 +114,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Price
               </label>
               <input
@@ -126,7 +126,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700  dark:text-gray-300 block mb-1 font-medium">
                 Description
               </label>
               <input
@@ -138,7 +138,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Rating
               </label>
               <input
@@ -153,7 +153,7 @@ const AddProduct = () => {
           <div className="mt-8 flex justify-center">
             <button
               type="submit"
-              className="py-2 px-20 lg:px-44 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50"
+              className="py-2 px-20 lg:px-44 font-medium bg-purple-500 text-white rounded hover:bg-purple-200 hover:text-gray-600 active:bg-blue-700 disabled:opacity-50"
             >
               Submit
             </button>

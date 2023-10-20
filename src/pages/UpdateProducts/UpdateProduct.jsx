@@ -50,16 +50,16 @@ const UpdateProduct = () => {
   };
   return (
     <div>
-      <div className="p-8 rounded border border-gray-200">
-        <h1 className="font-medium text-3xl">Update Product</h1>
-        <p className="text-gray-600 mt-6">
+      <div className="p-8 rounded bg-base-100 dark:bg-gray-700">
+        <h1 className="font-medium text-3xl dark:text-gray-200">Update Product</h1>
+        <p className="text-gray-600 dark:text-gray-200 mt-6">
           Please provide the details of the product you want to update to our
           catalog. We appreciate your contribution to our platform.
         </p>
         <form onSubmit={handleUpdateProduct}>
           <div className="mt-8 grid lg:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Name
               </label>
               <input
@@ -72,7 +72,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Image
               </label>
               <input
@@ -85,7 +85,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Color
               </label>
               <input
@@ -98,7 +98,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Brand Name
               </label>
               <input
@@ -111,7 +111,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700  dark:text-gray-300 block mb-1 font-medium">
                 Product Type
               </label>
               <input
@@ -124,7 +124,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Price
               </label>
               <input
@@ -137,7 +137,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Description
               </label>
               <input
@@ -150,7 +150,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300a block mb-1 font-medium">
                 Rating
               </label>
               <input

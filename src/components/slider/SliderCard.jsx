@@ -7,7 +7,7 @@ const SliderCard = ({ slider }) => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = images.length;
-  const slideInterval = 4000; 
+  const slideInterval = 2000; 
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,7 +31,7 @@ const SliderCard = ({ slider }) => {
   };
 
   return (
-    <div className="carousel w-full h-[50vh] lg:h-[80vh] relative overflow-hidden">
+    <div className="carousel w-full h-[50vh] lg:h-[80vh] relative overflow-hidden ">
       {images.map((image, index) => (
         <div
           key={`slide${index + 1}`}
@@ -39,7 +39,7 @@ const SliderCard = ({ slider }) => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img src={image} className="w-full h-full" />
+          <img src={image} className="w-full h-full "/>
           <div style={sloganOverlayStyle}>
             <p className='text-4xl text-base-100'>{slogans[index]}</p>
           </div>

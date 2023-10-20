@@ -44,8 +44,8 @@ const SignUp = () => {
 
   return (
     <>
-      <div className=" flex h-full py-5 px-5 lg:min-h-screen justify-center items-center bg-pink-100  dark:bg-slate-500">
-        <div className="bg-pink-200  dark:bg-slate-800 w-full   lg:w-fit rounded-2xl shadow-lg py-5">
+      <div className=" flex h-full py-5 px-5 lg:min-h-screen justify-center items-center bg-base-200  dark:bg-slate-500">
+        <div className="bg-base-100  dark:bg-slate-800 w-full   lg:w-fit rounded-2xl shadow-lg py-5">
           <div className="px-8 md:px-16">
             <h2 className="font-bold text-2xl dark:text-white text-[#002D74]">Signup</h2>
             <p className="text-xs mt-4 text-[#002D74] dark:text-white">If you are new, please signup</p>
@@ -55,7 +55,7 @@ const SignUp = () => {
               <input className="p-2  rounded-xl border" type="email" name="email" placeholder="Email" required/>
               <input className="p-2  rounded-xl border" type="text" name="image" placeholder="Image URL" required/>
               <input className={`p-2 rounded-xl border w-full ${hasSpecialCharacter ? '' : ''}`} type="password" name="password" placeholder="Password" required/>
-              <button className="bg-pink-800 rounded-xl text-white py-2 hover:scale-105 duration-300" type='submit'>Signup</button>
+              <button className="bg-blue-800 text-white rounded-xl  py-2 hover:scale-105 duration-300" type='submit'>Signup</button>
             </form>
 
             <div className="mt-2 grid grid-cols-3 items-center text-gray-400">

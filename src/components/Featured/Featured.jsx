@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 
 const Featured = () => {
     return (
-        <div className="pt-10">
-        <div className="bg-white dark:bg-gray-800 py-6 sm:py-8 lg:py-12">
+        <div className="pt-6 px-4 md:px-0">
+            <h2 className="text-center text-3xl py-4 text-purple-400">Featured Categories</h2>
+            
+        <div className="bg-white dark:bg-gray-800  sm:py-8 ">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
            
@@ -11,7 +13,7 @@ const Featured = () => {
         
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8">
+        <div className="grid grid-cols-1  gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8">
   
             <Link href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
@@ -46,7 +48,7 @@ const Featured = () => {
                 <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
             </Link>
           
-            <a href="#"
+            <Link href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                 <img src="https://i.ibb.co/whMPQf1/pc0012.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
@@ -55,7 +57,7 @@ const Featured = () => {
                 </div>
 
                 <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
-            </a>
+            </Link>
             
         </div>
     </div>

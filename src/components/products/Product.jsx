@@ -6,18 +6,18 @@ const Product = ({product}) => {
    
     return (
         <div className="pb-10">
-       <div className="card bg-base-100 shadow-xl">
+       <div className="card bg-base-100 dark:bg-gray-700 dark:text-gray-200 shadow-xl transform hover:scale-105 pointer duration-500 cursor-pointer">
   <figure><img src={image} className="h-60 w-full"/></figure>
   <div className="card-body">
     <h2 className="card-title">
       {name}
-      <div className="badge bg-purple-400 p-3">{brand}</div>
+      <div className="badge bg-purple-400 text-gray-100 p-3">{brand}</div>
       
     </h2>
     <div className="flex justify-between items-center">
-        <div>
+        <div className="space-y-1">
         <h2>{type}</h2>
-        <h2>${price}</h2>
+        <h2 className="font-semibold">${price}</h2>
         </div>
         <span><span className="text-2xl text-purple-500">&#9733;
           </span>{rating}</span>

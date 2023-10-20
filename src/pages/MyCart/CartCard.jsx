@@ -25,7 +25,7 @@ const CartCard = ({ carts, setCarts, cart }) => {
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              Swal.fire("Deleted!", "Your Coffee has been deleted.", "success");
+              Swal.fire("Deleted!", "Your Product has been deleted.", "success");
               const remaining = carts.filter((cof) => cof._id !== _id);
               setCarts(remaining);
             }
@@ -34,21 +34,18 @@ const CartCard = ({ carts, setCarts, cart }) => {
     });
   };
   return (
-    <div>
-      <div className="card card-compact  bg-base-100 shadow-xl">
-        <figure>
-          <img src={image} className="h-52" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <p>{brand}</p>
-          <div className="card-actions justify-end">
-            <button
-              onClick={() => handleDelete(_id)}
-              className="btn btn-primary"
-            >
-              Delete
-            </button>
+    <div className="">
+      <div className="bg-base-100 dark:bg-gray-700 rounded-md ">
+        <div className="">
+            <img src={image} className="h-52 w-full" />
+        </div>
+        <div className="flex justify-between p-10 ">
+          <div className="">
+          <h1 className="text-xl font-medium dark:text-slate-200">{name}</h1>
+          <h2 className="text-2xl pt-3  dark:text-slate-200">$ {price}</h2>
+          </div>
+          <div>
+            <button onClick={()=>handleDelete(_id)} className="bg-purple-500 px-3 py-2 rounded-md mt-8 text-white font-medium">Delete</button>
           </div>
         </div>
       </div>

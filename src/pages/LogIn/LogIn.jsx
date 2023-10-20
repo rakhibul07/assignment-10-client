@@ -28,9 +28,9 @@ const Login = () => {
   }
     return (
         <>
-            <div className="flex h-full py-10 px-5 lg:min-h-screen justify-center items-center bg-pink-100 dark:bg-slate-500 ">
+            <div className="flex h-full py-10 px-5 lg:min-h-screen justify-center items-center  dark:bg-slate-500 ">
   
-  <div className="bg-pink-200 dark:bg-slate-800 w-full lg:w-fit rounded-2xl shadow-lg py-5 ">
+  <div className=" dark:bg-slate-800 w-full lg:w-fit rounded-2xl shadow-lg py-5 ">
   
     <div className="px-8 md:px-16">
       <h2 className="font-bold text-2xl text-[#002D74] dark:text-white">Login</h2>
@@ -44,7 +44,7 @@ const Login = () => {
           <input className="p-2 rounded-xl border w-full" type="password" name="password" placeholder="Password" required/>
          
         
-        <button className="bg-pink-900 rounded-xl text-white py-2 hover:scale-105 duration-300">Login</button>
+        <button className="bg-blue-800 rounded-xl text-white py-2 hover:scale-105 duration-300">Login</button>
       </form>
 
       <div className="mt-2 grid grid-cols-3 items-center text-gray-400">

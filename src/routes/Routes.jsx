@@ -44,10 +44,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/:brand",
-        element: (
-          <PrivateRoutes>
+        element: (  
             <Products />
-          </PrivateRoutes>
         ),
         loader: () =>
           fetch(`https://assignment-10-server-rho-eosin.vercel.app/products`),

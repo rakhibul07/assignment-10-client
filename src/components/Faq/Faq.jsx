@@ -4,7 +4,7 @@ const Faq = () => {
     return (
         <div className="py-4 lg:py-8">
             <div className="bg-base-100 dark:bg-slate-800 flex flex-col justify-center items-center min-h-screen">
-                <section className="bg-base-200 dark:bg-slate-500 w-4/5 px-6 my-10 pb-8 pt-10 rounded-lg md:flex justify-between">
+                <section className="bg-base-200 dark:bg-slate-500 w-4/5 px-6 my-5 pb-8 pt-5 rounded-lg md:flex justify-between">
                     <div className="lg:w-2/6 py-2">
                         <p className="text-lg md:text-xl font-semibold">Frequently Asked Questions</p>
                     </div>
