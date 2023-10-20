@@ -1,13 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 const UpdateProduct = () => {
-
   const loadedProduct = useLoaderData();
-  const {_id, name, image,color, brand, type, price, rating,description } = loadedProduct;
+  const { _id, name, image, color, brand, type, price, rating, description } =
+    loadedProduct;
 
   const handleUpdateProduct = (e) => {
-    
-
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
@@ -18,10 +16,19 @@ const UpdateProduct = () => {
     const price = form.price.value;
     const description = form.description.value;
     const rating = form.rating.value;
-    const updatedProduct = { name, image,color, brand, type, price, description,rating };
+    const updatedProduct = {
+      name,
+      image,
+      color,
+      brand,
+      type,
+      price,
+      description,
+      rating,
+    };
     console.log(updatedProduct);
 
-    fetch(`http://localhost:5000/products/${_id}`, {
+    fetch(`https://assignment-10-server-rho-eosin.vercel.app/products/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

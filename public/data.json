@@ -2,37 +2,37 @@
     {
       "id": 1,
       "brand": "Apple",
-      "image": "https://i.ibb.co/rQhZjt4/ap.jpg",
+      "image": "https://i.ibb.co/vxtW6c6/app.jpg",
       "available": true
     },
     {
       "id": 2,
       "brand": "Samsung",
-      "image": "https://i.ibb.co/bJwsPHR/sa.webp",
+      "image": "https://i.ibb.co/2hjWFwT/b2.jpg",
       "available": false
     },
     {
       "id": 3,
-      "brand": "Google",
-      "image": "https://i.ibb.co/DRPVBp5/ggogle.webp",
+      "brand": "Xiaomi",
+      "image": "https://i.ibb.co/c2j7NQN/b3.jpg",
       "available": true
     },
     {
       "id": 4,
       "brand": "Sony",
-      "image": "https://i.ibb.co/098zyGy/so.jpg",
+      "image": "https://i.ibb.co/31Xqnnh/b4.png",
       "available": true
     },
     {
       "id": 5,
       "brand": "Intel",
-      "image": "https://i.ibb.co/L8PHTy3/i.webp",
+      "image": "https://i.ibb.co/DKQzPcV/b7.jpg",
       "available": false
     },
     {
       "id": 6,
       "brand": "Microsoft",
-      "image": "https://i.ibb.co/LtsxVyS/m.jpg",
+      "image": "https://i.ibb.co/D9t2TcV/b5.jpg",
       "available": true
     }
   ]

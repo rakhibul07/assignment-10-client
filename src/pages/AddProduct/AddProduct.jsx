@@ -11,10 +11,19 @@ const AddProduct = () => {
     const price = form.price.value;
     const description = form.description.value;
     const rating = form.rating.value;
-    const product = { name, image,color, brand, type, price, description,rating };
+    const product = {
+      name,
+      image,
+      color,
+      brand,
+      type,
+      price,
+      description,
+      rating,
+    };
     console.log(product);
 
-    fetch("http://localhost:5000/products", {
+    fetch("https://assignment-10-server-rho-eosin.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -1,9 +1,34 @@
+import { useEffect, useState } from "react";
+import SliderCard from "./SliderCard";
+import { useParams } from "react-router-dom";
 
 
-const Slider = () => {
+const Slider = () => { 
+    const [sliders,setSliders] = useState([]);
+    useEffect(()=>{
+        fetch("/slider.json")
+        .then(res=>res.json())
+        .then(data=>setSliders(data)
+        )
+
+
+    },[])
+    const {brand} = useParams();
+    console.log(brand);
+    
+    const filterData = sliders?.filter(data=> data.brand === brand)
+   
     return (
-        <div>
-            <h2>slider</h2>
+        <div className="pb-10">
+            {
+              filterData?.map(slider=><SliderCard key={slider.id} slider={slider}></SliderCard>)
+
+             
+            }
+      
+    
+            
+
         </div>
     );
 };

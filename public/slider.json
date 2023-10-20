@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "brand": "Apple",
+        "image1": "https://i.ibb.co/prGLQ3d/s1.jpg",
+        "image2": "https://i.ibb.co/hfXC7YN/s2.jpg",
+        "image3": "https://i.ibb.co/0X55f95/s3.jpg"
+    },
+    {
+        "id": 2,
+        "brand": "Samsung",
+        "image1": "https://i.ibb.co/W09vfmd/sams.jpg",
+        "image2": "https://i.ibb.co/5c713Lr/sams2.jpg",
+        "image3": "https://i.ibb.co/hcbyHc3/sag.webp"
+    },
+    {
+        "id": 3,
+        "brand": "Xiaomi",
+        "image1": "image1_3.jpg",
+        "image2": "image2_3.jpg",
+        "image3": "image3_3.jpg"
+    },
+    {
+        "id": 4,
+        "brand": "Sony",
+        "image1": "image1_4.jpg",
+        "image2": "image2_4.jpg",
+        "image3": "image3_4.jpg"
+    },
+    {
+        "id": 5,
+        "brand": "Intel",
+        "image1": "image1_5.jpg",
+        "image2": "image2_5.jpg",
+        "image3": "image3_5.jpg"
+    },
+    {
+        "id": 6,
+        "brand": "Microsoft",
+        "image1": "image1_6.jpg",
+        "image2": "image2_6.jpg",
+        "image3": "image3_6.jpg"
+    }
+]
