@@ -12,7 +12,7 @@ const Card = ({card}) => {
 	<img src={image} alt="" className="object-cover object-center w-full rounded-md h-72 bg-gray-400 dark:bg-gray-500" />
 	<div className="mt-6 mb-2">
 		
-		<h2 className="text-xl font-semibold">{brand}</h2>
+		<h2 className="text-xl text-gray-600 font-semibold">{brand}</h2>
 	</div>
 	
            </div>

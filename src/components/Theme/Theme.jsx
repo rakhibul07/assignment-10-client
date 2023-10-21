@@ -1,6 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-
+import PropTypes from 'prop-types';
 export const ThemeContext = createContext(null);
+
+
 const Theme = ({ children }) => {
     const storedTheme = localStorage.getItem("theme");
     const [theme, setTheme] = useState(storedTheme || "light");
@@ -31,5 +33,7 @@ const Theme = ({ children }) => {
         </ThemeContext.Provider>
     );
 };
-
+Theme.propTypes = {
+    children:PropTypes.node
+}
 export default Theme;

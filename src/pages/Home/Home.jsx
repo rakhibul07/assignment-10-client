@@ -5,9 +5,6 @@ import Console from "../../components/Console/Console";
 import Faq from "../../components/FAQ/FAQ";
 import Featured from "../../components/Featured/Featured";
 
-
-
-
 const Home = () => {
     const cards = useLoaderData();
     return (

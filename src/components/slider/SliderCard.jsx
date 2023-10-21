@@ -1,4 +1,5 @@
 import{ useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const SliderCard = ({ slider }) => {
   const { image1, image2, image3 } = slider;
@@ -48,5 +49,7 @@ const SliderCard = ({ slider }) => {
     </div>
   );
 };
-
+SliderCard.propTypes ={
+  slider:PropTypes.object
+}
 export default SliderCard;

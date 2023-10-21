@@ -1,4 +1,5 @@
 import toast from "react-hot-toast";
+import PropTypes from 'prop-types';
 
 const DetailsCard = ({ product }) => {
   const { name, image, color, brand, type, price, rating, description } =
@@ -57,5 +58,7 @@ const DetailsCard = ({ product }) => {
     </div>
   );
 };
-
+DetailsCard.propTypes ={
+  product:PropTypes.object
+}
 export default DetailsCard;

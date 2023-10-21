@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import PropTypes from 'prop-types';
 const CartCard = ({ carts, setCarts, cart }) => {
-  const { _id, name, image, color, brand, type, price, rating, description } =
+  const { _id, name, image,price,  } =
     cart;
 
   const handleDelete = (_id) => {
