@@ -150,7 +150,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-gray-700 dark:text-gray-300a block mb-1 font-medium">
+              <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Rating
               </label>
               <input

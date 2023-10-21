@@ -34,17 +34,17 @@ const CartCard = ({ carts, setCarts, cart }) => {
     });
   };
   return (
-    <div className="">
-      <div className="bg-base-100 dark:bg-gray-700 rounded-md ">
+    <div className=" bg-slate-100">
+      <div className="bg-base-100 dark:bg-gray-700 rounded-md shadow-md">
         <div className="">
-            <img src={image} className="h-52 w-full" />
+            <img src={image} className="h-52 w-full rounded-t-md" />
         </div>
-        <div className="flex justify-between p-10 ">
+        <div className="flex justify-between p-10 second h-44">
           <div className="">
           <h1 className="text-xl font-medium dark:text-slate-200">{name}</h1>
           <h2 className="text-2xl pt-3  dark:text-slate-200">$ {price}</h2>
           </div>
-          <div>
+          <div className="">
             <button onClick={()=>handleDelete(_id)} className="bg-purple-500 px-3 py-2 rounded-md mt-8 text-white font-medium">Delete</button>
           </div>
         </div>

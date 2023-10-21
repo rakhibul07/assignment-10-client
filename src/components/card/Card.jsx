@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Card = ({card}) => {
-    const {id,brand,image} = card;
+    const {brand,image} = card;
     return (
         <div>
            
