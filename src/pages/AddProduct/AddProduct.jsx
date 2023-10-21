@@ -63,6 +63,7 @@ const AddProduct = () => {
                 id="name"
                 className="bg-gray-100 border border-gray-200 rounded py-2 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
                 placeholder="Enter the product name"
+                required
               />
             </div>
             <div>
@@ -75,6 +76,7 @@ const AddProduct = () => {
                 id="image"
                 className="bg-gray-100 border border-gray-200 rounded py-2 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
                 placeholder="Enter the image URL or path"
+                required
               />
             </div>
             <div>
@@ -93,14 +95,23 @@ const AddProduct = () => {
               <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Brand Name
               </label>
-              <input
-                type="text"
+              <select
                 name="brand"
                 id="brand"
+                placeholder="Brand Name"
+                required
                 className="bg-gray-100 border border-gray-200 rounded py-2 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
-                placeholder="Enter the brand name"
-              />
+              >
+                <option>Select a brand</option>
+                <option value="Apple">Apple</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Sony">Sony</option>
+                <option value="Intel">Intel</option>
+                <option value="Microsoft">Microsoft</option>
+              </select>
             </div>
+
             <div>
               <label className="text-sm text-gray-700 dark:text-gray-300 block mb-1 font-medium">
                 Product Type
@@ -123,6 +134,7 @@ const AddProduct = () => {
                 id="price"
                 className="bg-gray-100 border border-gray-200 rounded py-2 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
                 placeholder="Enter the price"
+                required
               />
             </div>
             <div>

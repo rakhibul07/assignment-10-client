@@ -49,7 +49,7 @@ const UpdateProduct = () => {
       });
   };
   return (
-    <div>
+    <div className="py-4">
       <div className="p-8 rounded bg-base-100 dark:bg-gray-700">
         <h1 className="font-medium text-3xl dark:text-gray-200">Update Product</h1>
         <p className="text-gray-600 dark:text-gray-200 mt-6">
