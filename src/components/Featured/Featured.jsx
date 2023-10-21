@@ -2,18 +2,14 @@ import { Link } from "react-router-dom";
 
 const Featured = () => {
     return (
-        <div className="pt-6 px-4 md:px-0">
-            <h2 className="text-center text-3xl py-4 text-purple-400">Featured Categories</h2>
+        <div className="pt-6 px-4 md:px-0 ">
+            <h2 className="text-center  text-3xl py-4 text-purple-400">Featured Categories</h2>
             
         <div className="bg-white dark:bg-gray-800  sm:py-8 ">
-    <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-           
+    <div className="mx-auto max-w-screen-2xl px-4 md:px-8 py-4 lg:py-0 ">
+       
 
-        
-        </div>
-
-        <div className="grid grid-cols-1  gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8">
+        <div className="grid grid-cols-1  gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8 ">
   
             <Link href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
