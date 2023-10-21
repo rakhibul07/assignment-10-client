@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-
+import PropTypes from 'prop-types';
 const CartCard = ({ carts, setCarts, cart }) => {
   const { _id, name, image, color, brand, type, price, rating, description } =
     cart;
@@ -34,12 +34,12 @@ const CartCard = ({ carts, setCarts, cart }) => {
     });
   };
   return (
-    <div className=" bg-slate-100">
-      <div className="bg-base-100 dark:bg-gray-700 rounded-md shadow-md">
+    <div className=" ">
+      <div className="bg-base-100 dark:bg-gray-700 shadow-md rounded-md">
         <div className="">
             <img src={image} className="h-52 w-full rounded-t-md" />
         </div>
-        <div className="flex justify-between p-10 second h-44">
+        <div className="flex justify-between p-10 second h-44 ">
           <div className="">
           <h1 className="text-xl font-medium dark:text-slate-200">{name}</h1>
           <h2 className="text-2xl pt-3  dark:text-slate-200">$ {price}</h2>
@@ -52,5 +52,9 @@ const CartCard = ({ carts, setCarts, cart }) => {
     </div>
   );
 };
-
+CartCard.propTypes ={
+  carts:PropTypes.array,
+  setCarts:PropTypes.func,
+  cart:PropTypes.object
+}
 export default CartCard;

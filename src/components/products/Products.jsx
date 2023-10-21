@@ -5,7 +5,7 @@ import Slider from "../slider/Slider";
 const Products = () => {
     const { brand } = useParams();
     const products = useLoaderData();
-    console.log(products);
+
     
 
     const filteredProducts = products.filter((product) => product.brand === brand);

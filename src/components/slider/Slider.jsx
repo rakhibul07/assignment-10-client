@@ -14,7 +14,6 @@ const Slider = () => {
 
     },[])
     const {brand} = useParams();
-    console.log(brand);
     
     const filterData = sliders?.filter(data=> data.brand === brand)
    

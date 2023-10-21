@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const Product = ({product}) => {
-    const {_id,name, image,color, brand, type, price, rating} = product;
+    const {_id,name, image, brand, type, price, rating} = product;
    
     return (
         <div className="pb-10">
@@ -32,5 +32,8 @@ const Product = ({product}) => {
         
     );
 };
+Product.propTypes ={
+  product:PropTypes.object
+}
 
 export default Product;

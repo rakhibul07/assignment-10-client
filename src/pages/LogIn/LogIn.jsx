@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogIn from "../../components/socialLogIn/SocialLogIn";
 
 import toast from "react-hot-toast";
@@ -6,8 +6,9 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 
 const Login = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const {login} = useContext(AuthContext);
+  const location = useLocation();
 
   const handleSubmit = e =>{
     e.preventDefault()
@@ -19,7 +20,7 @@ const Login = () => {
       .then(()=>{
           toast.success("User logged in successfully")
           e.target.reset();
-          navigate("/");
+          navigate(location?.state ? location.state : "/");
       })
       .catch(()=>{
         toast.error("Email and Password doesn't match or Didn't signup") 

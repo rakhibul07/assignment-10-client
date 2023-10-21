@@ -6,9 +6,11 @@ import Footer from '../components/footer/Footer';
 
 const Layout = () => {
     return (
-        <div className='lg:px-10 bg-slate-100 dark:bg-gray-600'>
+        <div >
             <NavBar />
+            <div className='lg:px-10 bg-slate-100 dark:bg-gray-600'>
             <Outlet />
+            </div>
             <Footer />
             <Toaster />
         </div>

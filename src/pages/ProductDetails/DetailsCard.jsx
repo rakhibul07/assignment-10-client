@@ -33,10 +33,10 @@ const DetailsCard = ({ product }) => {
       });
   };
   return (
-    <div className=" bg-base-100 dark:bg-gray-700 py-6 ">
-      <div className="lg:flex justify-center items-center gap-6">
+    <div className="pb-4 lg:py-6 ">
+      <div className="lg:flex justify-center items-center bg-base-100 dark:bg-gray-700  gap-6">
         <div className="flex-1 p-5 lg:p-10">
-          <img src={image} className="h-[300px] md:h-[400px] w-full" />
+          <img src={image} className="h-[300px] md:h-[400px] w-full rounded-md" />
         </div>
         <div className="flex-1 text-justify space-y-6 p-4">
           <h2 className="text-4xl text-gray-400 dark:text-gray-200 font-bold">{name}</h2>

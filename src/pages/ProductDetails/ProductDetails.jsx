@@ -6,8 +6,6 @@ const ProductDetails = () => {
     const [product,setProduct] = useState({});
     const products = useLoaderData();
     const {id} = useParams();
-    console.log(product);
-    
 
    useEffect(()=>{
     const findProduct = products.find(product => product._id == id)

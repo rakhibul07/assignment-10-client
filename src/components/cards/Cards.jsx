@@ -1,11 +1,7 @@
 import Card from "../card/Card";
 import PropTypes from 'prop-types'; 
 
-
 const Cards = ({cards}) => {
-    
-  
-    
     
     return (
         <div>
