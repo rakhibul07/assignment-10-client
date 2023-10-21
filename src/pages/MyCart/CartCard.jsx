@@ -34,7 +34,7 @@ const CartCard = ({ carts, setCarts, cart }) => {
     });
   };
   return (
-    <div className=" ">
+    <div className=" px-4 lg:px-0">
       <div className="bg-base-100 dark:bg-gray-700 shadow-md rounded-md">
         <div className="">
             <img src={image} className="h-52 w-full rounded-t-md" />
