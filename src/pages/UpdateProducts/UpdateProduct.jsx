@@ -1,10 +1,16 @@
-import { useLoaderData } from "react-router-dom";
+import { useContext } from "react";
+import { Navigate, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 const UpdateProduct = () => {
+ 
   const loadedProduct = useLoaderData();
   const { _id, name, image, color, brand, type, price, rating, description } =
     loadedProduct;
-
+    const {user} = useContext(AuthContext)
+    if(user?.email !== "uchihaitachi01581@gmail.com"){
+      return <Navigate to="/"></Navigate>
+    }
   const handleUpdateProduct = (e) => {
     e.preventDefault();
     const form = e.target;

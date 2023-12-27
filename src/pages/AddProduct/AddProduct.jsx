@@ -1,5 +1,12 @@
+import { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
+import { Navigate } from "react-router-dom";
 const AddProduct = () => {
+  const {user} = useContext(AuthContext)
+  if(user?.email !== "uchihaitachi01581@gmail.com"){
+    return <Navigate to="/"></Navigate>
+  }
   const handleAddProduct = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -23,7 +30,7 @@ const AddProduct = () => {
     };
     console.log(product);
 
-    fetch("https://assignment-10-server-rho-eosin.vercel.app/products", {
+    fetch("http://localhost:5000/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

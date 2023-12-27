@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 
 const Product = ({product}) => {
+  const {user} = useContext(AuthContext)
     const {_id,name, image, brand, type, price, rating} = product;
    
     return (
@@ -24,7 +27,7 @@ const Product = ({product}) => {
     </div>
     <div className="card-actions justify-end">
      <Link to={`/products/${brand}/${_id}`}> <div className="badge badge-outline">Details</div> </Link>
-     <Link to={`/updateProduct/${_id}`}> <div className="badge badge-outline">Update</div></Link>
+    {user?.email === "uchihaitachi01581@gmail.com" && <Link to={`/updateProduct/${_id}`}> <div className="badge badge-outline">Update</div></Link>}
     </div>
   </div>
 </div>

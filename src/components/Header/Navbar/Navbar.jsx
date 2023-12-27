@@ -5,52 +5,54 @@ import { BsFillSunFill } from "react-icons/bs";
 import { ThemeContext } from "../../Theme/Theme";
 import { AuthContext } from "../../../providers/AuthProvider/AuthProvider";
 
-const links = (
-  <>
-    <li>
-      <NavLink
-        className={({ isActive }) =>
-          `font-medium text-lg ${
-            isActive ? "text-purple-500" : "text-black dark:text-white"
-          }`
-        }
-        to="/"
-      >
-        Home
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        className={({ isActive }) =>
-          `font-medium text-lg ${
-            isActive ? "text-purple-500 " : "text-black dark:text-white"
-          }`
-        }
-        to="/addProduct"
-      >
-        Add Product
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        className={({ isActive }) =>
-          `font-medium text-lg ${
-            isActive ? "text-purple-500 " : "text-black dark:text-white"
-          }`
-        }
-        to="/myCart"
-      >
-        My Cart
-      </NavLink>
-    </li>
-  </>
-);
+
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
   const { handleTheme, mode, setMode } = useContext(ThemeContext);
+  const links = (
+    <>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `font-medium text-lg ${
+              isActive ? "text-purple-500" : "text-black dark:text-white"
+            }`
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
+      </li>
+      {user?.email == "uchihaitachi01581@gmail.com" &&<li>
+        <NavLink
+          className={({ isActive }) =>
+            `font-medium text-lg ${
+              isActive ? "text-purple-500 " : "text-black dark:text-white"
+            }`
+          }
+          to="/addProduct"
+        >
+          Add Product
+        </NavLink>
+      </li>}
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            `font-medium text-lg ${
+              isActive ? "text-purple-500 " : "text-black dark:text-white"
+            }`
+          }
+          to="/myCart"
+        >
+          My Cart
+        </NavLink>
+      </li>
+    </>
+  );
 
   return (
+
     <div>
       <div className="navbar dark:bg-gray-700 dark:text-white shadow-md  ">
         <div className="navbar-start">

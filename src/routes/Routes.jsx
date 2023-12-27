@@ -38,17 +38,12 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://assignment-10-server-rho-eosin.vercel.app/products/${params.id}`
-          ),
+          fetch(`http://localhost:5000/products/${params.id}`),
       },
       {
         path: "/products/:brand",
-        element: (  
-            <Products />
-        ),
-        loader: () =>
-          fetch(`https://assignment-10-server-rho-eosin.vercel.app/products`),
+        element: <Products />,
+        loader: () => fetch(`http://localhost:5000/products`),
       },
       {
         path: "/products/:brand/:id",
@@ -57,8 +52,7 @@ const router = createBrowserRouter([
             <ProductDetails />
           </PrivateRoutes>
         ),
-        loader: () =>
-          fetch("https://assignment-10-server-rho-eosin.vercel.app/products"),
+        loader: () => fetch("http://localhost:5000/products"),
       },
       {
         path: "/myCart",
@@ -67,8 +61,7 @@ const router = createBrowserRouter([
             <MyCart />
           </PrivateRoutes>
         ),
-        loader: () =>
-          fetch("https://assignment-10-server-rho-eosin.vercel.app/carts"),
+        loader: () => fetch("http://localhost:5000/carts"),
       },
       {
         path: "/signUp",
